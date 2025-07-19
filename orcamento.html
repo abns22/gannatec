@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento - GANNATEC e DEX</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <div class="logo-container">
+          <div class="logo-placeholder">
+            <img src="images/4.png" alt="Logo 1" class="logo-img">
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/5.png" alt="Logo 2" class="logo-img">
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="orcamento.html" class="nav-link">Orçamento</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+        <li><a href="licitacoes.html" class="nav-link">Processos Licitatórios</a></li>
+        <li><a href="dex.html" class="nav-link dex-nav">DEX</a></li>
+        <li><a href="gannatec.html" class="nav-link gannatec-nav">GANNATEC</a></li>
+      </ul>
+      <div class="navbar-buttons">
+        <a href="dex.html" class="nav-link dex-nav">DEX</a>
+        <a href="gannatec.html" class="nav-link gannatec-nav">GANNATEC</a>
+      </div>
+      <div class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" style="padding-top: 100px;">
+    <div class="header-background">
+      <img src="images/6.jpg" alt="Header Background" class="header-bg-img">
+    </div>
+    <div class="container">
+      <h1>Solicitar Orçamento</h1>
+      <p>Preencha o formulário abaixo e entraremos em contato</p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="form-container">
+        <form class="quote-form" action="https://formsubmit.co/contato@gannatec.com.br" method="POST">
+          <h2 class="form-title">Solicitar Orçamento</h2>
+          <input type="hidden" name="_subject" value="Nova solicitação de orçamento - GANNATEC & DEX">
+          <input type="hidden" name="_next" value="https://gannatec.com.br/obrigado.html">
+          <div class="form-group required">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+          </div>
+          
+          <div class="form-group required">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+          </div>
+          
+          <div class="form-group required">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+          </div>
+          
+          <div class="form-group">
+            <label for="company">Empresa</label>
+            <input type="text" id="company" name="company" placeholder="Nome da sua empresa (opcional)">
+          </div>
+          
+          <div class="form-group required">
+            <label for="service">Tipo de Serviço</label>
+            <select id="service" name="service" required>
+              <option value="">Selecione um serviço</option>
+              <option value="ambiental">Assessoria Ambiental (GANNATEC)</option>
+              <option value="detetizacao">Dedetização (DEX)</option>
+              <option value="ambos">Ambos os Serviços</option>
+            </select>
+          </div>
+          
+          <div class="form-group required">
+            <label for="description">Descrição do Projeto</label>
+            <textarea id="description" name="description" rows="5" required placeholder="Descreva detalhadamente o que você precisa..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="urgency">Urgência</label>
+            <select id="urgency" name="urgency">
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="submit-btn">Enviar Solicitação</button>
+        </form>
+        
+        <div class="whatsapp-section">
+          <h3>Prefere falar diretamente?</h3>
+          <p>Entre em contato conosco via WhatsApp para um atendimento mais rápido</p>
+          <a href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para serviços de assessoria ambiental ou dedetização." class="whatsapp-btn" target="_blank">
+            <span>💬</span> Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <h3>GANNATEC & DEX</h3>
+        <p>Assessoria ambiental e detetizadora</p>
+        <p>Email: contato@gannatec.com.br</p>
+        <p>WhatsApp: (11) 99999-9999</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GANNATEC & DEX. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Alfredo Braz Neto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 

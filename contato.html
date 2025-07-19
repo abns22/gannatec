@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - GANNATEC e DEX</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <div class="logo-container">
+          <div class="logo-placeholder">
+            <img src="images/4.png" alt="Logo 1" class="logo-img">
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/5.png" alt="Logo 2" class="logo-img">
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="orcamento.html" class="nav-link">Orçamento</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+        <li><a href="licitacoes.html" class="nav-link">Processos Licitatórios</a></li>
+        <li><a href="dex.html" class="nav-link dex-nav">DEX</a></li>
+        <li><a href="gannatec.html" class="nav-link gannatec-nav">GANNATEC</a></li>
+      </ul>
+      <div class="navbar-buttons">
+        <a href="dex.html" class="nav-link dex-nav">DEX</a>
+        <a href="gannatec.html" class="nav-link gannatec-nav">GANNATEC</a>
+      </div>
+      <div class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" style="padding-top: 100px;">
+    <div class="header-background">
+      <img src="images/6.jpg" alt="Header Background" class="header-bg-img">
+    </div>
+    <div class="container">
+      <h1>Entre em Contato</h1>
+      <p>Estamos aqui para ajudar você</p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Informações de Contato</h2>
+          
+          <div class="contact-item">
+            <h3>GANNATEC - Assessoria Ambiental</h3>
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p><strong>E-mail:</strong> contato@gannatec.com</p>
+            <p><strong>Endereço:</strong> São Paulo, SP - Brasil</p>
+          </div>
+          
+          <div class="contact-item">
+            <h3>DEX - Dedetização</h3>
+            <p><strong>Telefone:</strong> (11) 88888-8888</p>
+            <p><strong>E-mail:</strong> contato@dex.com</p>
+            <p><strong>Endereço:</strong> São Paulo, SP - Brasil</p>
+          </div>
+          
+          <div class="contact-item">
+            <h3>Horário de Atendimento</h3>
+            <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+            <p><strong>Sábado:</strong> 8h às 12h</p>
+            <p><strong>Emergências:</strong> 24h</p>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form action="https://formsubmit.co/contato@gannatec.com.br" method="POST">
+            <h2 class="form-title">Envie uma Mensagem</h2>
+            <input type="hidden" name="_subject" value="Nova mensagem de contato - GANNATEC & DEX">
+            <input type="hidden" name="_next" value="https://gannatec.com.br/obrigado.html">
+            
+            <div class="form-group required">
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="form-group required">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+            </div>
+            
+            <div class="form-group required">
+              <label for="subject">Assunto</label>
+              <select id="subject" name="subject" required>
+                <option value="">Selecione um assunto</option>
+                <option value="ambiental">Assessoria Ambiental</option>
+                <option value="detetizacao">Dedetização</option>
+                <option value="orcamento">Solicitar Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            
+            <div class="form-group required">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Digite sua mensagem..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+          </form>
+          
+          <div class="whatsapp-section">
+            <h3>Atendimento via WhatsApp</h3>
+            <p>Para um atendimento mais rápido, entre em contato diretamente</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de falar sobre os serviços da GANNATEC e DEX." class="whatsapp-btn" target="_blank">
+              <span>💬</span> Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <h3>GANNATEC & DEX</h3>
+        <p>Assessoria ambiental e detetizadora</p>
+        <p>Email: contato@gannatec.com.br</p>
+        <p>WhatsApp: (11) 99999-9999</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GANNATEC & DEX. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Alfredo Braz Neto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
